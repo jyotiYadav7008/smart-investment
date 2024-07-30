@@ -2,9 +2,9 @@ import './../App.css';
 import React from 'react';
 import HeaderImage from'./../images/header.png';
 import FooterImage from'./../images/footer.png';
-import GraphImage from'./../images/graph.png';
+import GraphImage from'./../images/natwestgraph.png';
 
-function customerDashboardWithoutDependent() {
+function customerDashboardWithDependent() {
   return (
     <div className="App">
       <div className="zb-banner">
@@ -41,9 +41,10 @@ function customerDashboardWithoutDependent() {
                     </header>
                     <div className="zb-card-body ">
                       <p>Now could be the right time for you to start investment that would give returns and that will be beneficial for your kids (or) repayment of your mortgage.</p>
+                      <p>Here's a simple forecast graph illustrating how investment of £750 per month in stocks can accelerate your mortgage pay off by comparing the impact of paying interest in addition with returns on your investment.</p>
                       <div className="zb-image"><img src={GraphImage} /></div>
-                      <p><a href="https://www.natwest.com/investments/stocks-and-shares-isa.html#calc" target="_blank" rel="noreferrer">Find out more about Stock ISA investment</a></p>
-                      <p><a href="https://www.natwest.com/investments/stocks-and-shares-isa.html#apply" target="_blank" rel="noreferrer">Invest Now</a></p>
+                      <p><a href="https://www.natwest.com/investments/stocks-and-shares-isa.html#calc" target="_blank" rel="noreferrer">Continue with Stock ISA investment</a></p>
+                      <p><a href="https://www.natwest.com/investments/junior-isa.html#calc" target="_blank" rel="noreferrer">Continue with Junior ISA</a></p>
                     </div>
                   </section>
                 </div>
@@ -68,4 +69,4 @@ function customerDashboardWithoutDependent() {
   );
 }
 
-export default customerDashboardWithoutDependent;
+export default customerDashboardWithDependent;

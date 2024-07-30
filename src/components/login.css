@@ -89,11 +89,6 @@
     margin-bottom: 0.5rem;
 }
 
-.zb-champion-standard-theme .zb-button-primary:hover {
-    background-color: #3c1053;
-    color: #fff;
-    border: none;
-}
 .zb-champion-standard-theme .zb-button:hover {
     text-decoration: none;
 }
@@ -112,8 +107,8 @@
 }
 .zb-champion-standard-theme .zb-button-primary {
     padding: 12px 32px;
-    background-color: #5e10b1;
-    color: #fff;
+    background-color: #00deb6;
+    color: black;
     border: none;
     line-height: 1.45;
 }
