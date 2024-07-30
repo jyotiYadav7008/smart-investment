@@ -2,7 +2,7 @@ import './../App.css';
 import './login.css';
 import React from 'react';
 import HeaderImage from'./../images/rightMove.png';
-import GraphImage from'./../images/graph.png';
+import GraphImage from'./../images/rightMovegraph.png';
 
 function CustomerDashboard() {
 
