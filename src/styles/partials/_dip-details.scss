@@ -1,0 +1,44 @@
+.zb-champion-standard-theme {
+    .cd-dip-details {
+        .zb-card-body {
+            background-color: var(--zb-champion-purple);
+            color: var(--zb-white);
+            padding-bottom: rem-calc(4px);
+        }
+        .cd-dip-details-label {
+            font-size: rem-calc(18px);
+            letter-spacing: rem-calc(0.2px);
+            line-height: rem-calc(26px);
+        }
+        .cd-dip-details-value {
+            font-size: rem-calc(30px);
+            line-height: rem-calc(40px);
+        }
+
+        .cd-dip-details-line {
+            margin-top: rem-calc(24px);
+            margin-bottom: rem-calc(24px);
+            border: none;
+            background-color: var(--zb-white);
+            height: 1px;
+        }
+
+        .cd-dip-details-aip-valid-date {
+            font-size: rem-calc(14px);
+            line-height: rem-calc(24px);
+            margin: 1rem 0;
+        }
+
+        .zb-columns {
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .cd-dip-details {
+        .zb-columns:not(.zb-mobile) {
+            align-items: flex-start;
+        }
+    }
+}

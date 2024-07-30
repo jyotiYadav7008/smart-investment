@@ -1,0 +1,36 @@
+.cd-tasks-progress-section {
+    .cd-tasks {
+        position: relative;
+    }
+    .cd-task {
+        padding-top: rem-calc(24px);
+        padding-bottom: rem-calc(24px);
+    }
+    .cd-task-title-container {
+        flex-shrink: 1;
+        padding-right: rem-calc(12px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cd-task-title {
+        color: var(--zb-heading-grey);
+
+        @media screen and (min-width: 841px) {
+            font-size: rem-calc(18px);
+        }
+
+        &.cd-task-title-disabled {
+            opacity: 0.6;
+        }
+    }
+    .cd-task-title-icon {
+        margin-right: rem-calc(8px);
+    }
+    .cd-status {
+        margin-bottom: rem-calc(8px);
+    }
+    .cd-task-more-details {
+        margin-top: rem-calc(12px);
+    }
+}

@@ -1,0 +1,26 @@
+.cd-joint-registration {
+    display: flex;
+    flex-direction: column;
+    gap: rem-calc(12px);
+
+    .cd-joint-details {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem-calc(20px);
+    }
+
+    .message,
+    .name {
+        color: var(--zb-heading-grey);
+        font-size: rem-calc(20px);
+    }
+
+    .label {
+        font-size: rem-calc(16px);
+    }
+
+    .value {
+        color: var(--zb-heading-grey);
+        font-size: rem-calc(18px);
+    }
+}

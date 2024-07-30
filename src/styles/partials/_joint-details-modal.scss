@@ -1,0 +1,21 @@
+@import "@zambezi/sdk-themes/colours/zb-champion/colours.scss";
+
+.cd-modalEmail,
+.cd-modalMobile {
+    margin-bottom: rem-calc(20px);
+}
+
+.cd-modalButton {
+    width: 100%;
+    margin-top: rem-calc(4px);
+}
+
+.zb-champion-standard-theme .zb-control-wrap .zb-field-error {
+    color: $zb-rag-red;
+    font-size: small;
+    margin-top: rem-calc(-16px);
+
+    svg {
+        display: none;
+    }
+}

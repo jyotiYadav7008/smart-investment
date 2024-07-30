@@ -1,0 +1,38 @@
+html,
+body,
+#root {
+    min-height: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+.Signup-error {
+    margin-bottom: 1em;
+}
+
+.App .zb-card-header-title {
+    justify-content: space-around;
+}
+
+.Mobile-notification {
+    margin-bottom: 1em;
+}
+
+.cd-error {
+    margin-top: rem-calc(8px);
+}
+
+@font-face {
+    font-family: "Knile-Black";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src:
+        local("Knile-Black"),
+        url("../fonts/Knile-Black/knile-black.woff2") format("woff2"),
+        url("../fonts/Knile-Black/knile-black.woff") format("woff");
+}

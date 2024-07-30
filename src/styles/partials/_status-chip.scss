@@ -1,0 +1,26 @@
+.cd-status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--zb-heading-grey);
+    padding: rem-calc(3px) rem-calc(8px);
+    border: 1px solid var(--zb-light-grey);
+    background: var(--zb-white);
+    border-radius: 4px;
+    font-weight: bold;
+
+    svg {
+        margin-left: rem-calc(4px);
+    }
+    &.cd-status-in-progress {
+        color: var(--zb-champion-purple);
+        background: var(--zb-sand);
+        border-color: var(--zb-sand);
+    }
+    &.cd-status-disabled {
+        opacity: 0.6;
+    }
+}

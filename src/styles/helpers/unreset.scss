@@ -1,0 +1,34 @@
+// sometimes we want to use 'default browser styles', removed with reset.scss
+// adding reset.scss might have been a mistake if more WebSDK components rely on default browser styles?
+
+b,
+strong {
+    font-weight: inherit;
+    font-weight: bolder;
+}
+
+ol,
+ul {
+    margin: rem-calc(16px) 0;
+}
+
+ol,
+ul {
+    padding-left: rem-calc(40px);
+}
+
+ul {
+    list-style: disc;
+}
+
+.zb-notification-body {
+    p {
+        margin: rem-calc(16px) 0;
+    }
+}
+
+.cd-default-spacing {
+    p + p:not(.no-margin) {
+        margin-top: rem-calc(16px);
+    }
+}

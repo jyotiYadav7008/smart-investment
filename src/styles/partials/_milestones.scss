@@ -1,0 +1,200 @@
+.cd-milestone-progress {
+    counter-reset: list-number;
+
+    .zb-card + .zb-card {
+        margin-top: rem-calc(24px);
+    }
+    .zb-card {
+        margin-left: rem-calc(64px);
+        position: relative;
+
+        &:before {
+            counter-increment: list-number;
+            content: counter(list-number);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: rem-calc(-64px);
+            top: 50%;
+            margin-top: rem-calc(-20px);
+            width: rem-calc(40px);
+            height: rem-calc(40px);
+            background-color: var(--zb-white);
+            border-radius: 1rem;
+            border: 1px solid var(--zb-light-grey);
+            z-index: 2;
+            font-size: rem-calc(14px);
+            line-height: rem-calc(16px);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &.cd-milestone-status-in-progress {
+            &:before {
+                content: "";
+                background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDE2IDE2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPjA1MUQ4QzQ1LUM0QTUtNDhGOS05RkFDLTdCNDdCQjBEQjI2MkAxeDwvdGl0bGU+CiAgICA8ZyBpZD0iRGFzaGJvYXJkLVZEIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iMy4tRElQLWRldGFpbHMtbm90LWV4cGFuZGVkX0wiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02Mi4wMDAwMDAsIC02OTYuMDAwMDAwKSIgZmlsbD0iIzY0NjA2OCI+CiAgICAgICAgICAgIDxnIGlkPSJSZWN0YW5nbGUtMjAtQ29weS0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MC4wMDAwMDAsIDY4NC4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyLjAwMDAwMCwgMTIuMDAwMDAwKSIgaWQ9IlJlY3RhbmdsZS0yMC1Db3B5LTIiPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNiw0LjQ0NDQ0NDQ0IEMxNiwxLjk4OTMzMzMzIDE0LjAxMDY2NjcsMCAxMS41NTU1NTU2LDAgTDQuNDQ0NDQ0NDQsMCBDMS45ODkzMzMzMywwIDAsMS45ODkzMzMzMyAwLDQuNDQ0NDQ0NDQgTDAsMTEuNTU1NTU1NiBDMCwxNC4wMTA2NjY3IDEuOTg5MzMzMzMsMTYgNC40NDQ0NDQ0NCwxNiBMMTEuNTU1NTU1NiwxNiBDMTQuMDEwNjY2NywxNiAxNiwxNC4wMTA2NjY3IDE2LDExLjU1NTU1NTYgTDE2LDQuNDQ0NDQ0NDQgWiBNMTQuMjIyMjIyMiwxMS41NTU1NTU2IEMxNC4yMjIyMjIyLDEzLjAyNzU1NTYgMTMuMDI3NTU1NiwxNC4yMjIyMjIyIDExLjU1NTU1NTYsMTQuMjIyMjIyMiBMNC40NDQ0NDQ0NCwxNC4yMjIyMjIyIEMyLjk3MDY2NjY3LDE0LjIyMjIyMjIgMS43Nzc3Nzc3OCwxMy4wMjc1NTU2IDEuNzc3Nzc3NzgsMTEuNTU1NTU1NiBMMS43Nzc3Nzc3OCw0LjQ0NDQ0NDQ0IEMxLjc3Nzc3Nzc4LDIuOTcyNDQ0NDQgMi45NzA2NjY2NywxLjc3Nzc3Nzc4IDQuNDQ0NDQ0NDQsMS43Nzc3Nzc3OCBMMTEuNTU1NTU1NiwxLjc3Nzc3Nzc4IEMxMy4wMjc1NTU2LDEuNzc3Nzc3NzggMTQuMjIyMjIyMiwyLjk3MjQ0NDQ0IDE0LjIyMjIyMjIsNC40NDQ0NDQ0NCBMMTQuMjIyMjIyMiwxMS41NTU1NTU2IFogTTgsNy45OTIgTDEwLjYzOTExMTEsMTAuMDExNTU1NiBMMTAuMTAxMzMzMywxMC44NTI0NDQ0IEw3LjA4MzU1NTU2LDguODg4ODg4ODkgTDcuMTExMTExMTEsOC44ODg4ODg4OSBMNy4xMTExMTExMSwzLjU1NTU1NTU2IEw4LDMuNTU1NTU1NTYgTDgsNy45OTIgWiIgaWQ9IlNoYXBlLUNvcHkiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+");
+                background-size: 1rem 1rem;
+            }
+        }
+
+        &.cd-milestone-status-complete {
+            &:before {
+                background: var(--zb-champion-purple);
+                color: var(--zb-white);
+                content: "";
+                background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDQwIDQwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPjlBMjU5OTk0LTA0NDktNDQ0QS1BREJELTI3MDcxREI2OTMwQUAxeDwvdGl0bGU+CiAgICA8ZGVmcz4KICAgICAgICA8cG9seWdvbiBpZD0icGF0aC0xIiBwb2ludHM9IjI2LjA0NzI0MTEgMTQgMTcuOTIyMjU2MyAyMi40MjU1MzE5IDE0LjcyMzIyMDUgMTkuMTA2MzgzIDEzIDIwLjg5MzYxNyAxNy45MjIyNTYzIDI2IDI3Ljc2OTIzMDggMTUuNzg1OTU3NCI+PC9wb2x5Z29uPgogICAgPC9kZWZzPgogICAgPGcgaWQ9IkRhc2hib2FyZC1WRCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IjMuLURJUC1kZXRhaWxzLW5vdC1leHBhbmRlZF9MIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTAuMDAwMDAwLCAtNTA3LjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0iT3ZhbC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MC4wMDAwMDAsIDUwNy4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtMjAtQ29weSIgZmlsbD0iIzVBMjg3RCIgeD0iMCIgeT0iMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iMTYiPjwvcmVjdD4KICAgICAgICAgICAgICAgIDxtYXNrIGlkPSJtYXNrLTIiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICAgICAgPC9tYXNrPgogICAgICAgICAgICAgICAgPHVzZSBpZD0iTWFzayIgZmlsbD0iI0ZGRkZGRiIgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
+                background-size: rem-calc(40px) rem-calc(40px);
+            }
+
+            &:after {
+                background-color: var(--zb-champion-purple);
+            }
+
+            & + .cd-milestone-status-in-progress,
+            & + .cd-milestone-status-to-do {
+                &:after {
+                    background: linear-gradient(
+                        to bottom,
+                        var(--zb-champion-purple),
+                        var(--zb-champion-purple) 50%,
+                        var(--zb-light-grey) 50%,
+                        var(--zb-light-grey) 100%
+                    );
+                }
+            }
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            left: rem-calc(-44px);
+            top: 0;
+            background-color: var(--zb-light-grey);
+            width: 4px;
+            height: calc(100% + rem-calc(24px));
+            z-index: 1;
+        }
+
+        &:first-of-type {
+            &:after {
+                top: 50%;
+                height: calc(50% + rem-calc(24px));
+            }
+        }
+
+        &:last-of-type {
+            &:after {
+                height: 50%;
+            }
+        }
+
+        &.cd-milestone-status-complete
+            + .zb-card:last-of-type.cd-milestone-status-in-progress,
+        &.cd-milestone-status-complete
+            + .zb-card:last-of-type.cd-milestone-status-to-do {
+            &:after {
+                background: var(--zb-champion-purple);
+            }
+        }
+
+        .cd-milestone-content {
+            display: none;
+
+            .zb-checklist-icon-cross {
+                visibility: hidden;
+            }
+        }
+
+        &.cd-milestone-progress-card-is-open {
+            .cd-milestone-content {
+                display: block;
+            }
+        }
+
+        .zb-card-header {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .zb-card-header-title {
+                font-size: rem-calc(18px);
+                line-height: rem-calc(22px);
+                min-height: auto;
+                margin: rem-calc(8px) 0 rem-calc(16px) 0;
+            }
+
+            .cd-status {
+                margin-top: 1.5rem;
+            }
+        }
+
+        .zb-card-body {
+            padding: 1rem rem-calc(30px);
+            font-size: 14px;
+        }
+
+        .zb-button-link {
+            font-size: 14px;
+            min-width: auto;
+
+            &:disabled {
+                opacity: 0.5;
+            }
+        }
+
+        .cd-milestone-buttons {
+            align-items: flex-start;
+        }
+
+        .cd-milestone-files {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+
+            a:not(:last-child) {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .zb-checklist {
+            margin: 1rem 0;
+
+            .zb-checklist-item {
+                margin-left: 0;
+                margin-bottom: rem-calc(12px);
+            }
+        }
+    }
+}
+
+.cd-milestone-progress-section {
+    .cd-continue-bt {
+        margin-top: rem-calc(24px);
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .cd-milestone-progress-section {
+        .cd-continue-bt {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .cd-milestone-progress-section {
+        .zb-card {
+            .cd-milestone-buttons {
+                flex-direction: column;
+                align-items: center;
+
+                .zb-level-start {
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+}

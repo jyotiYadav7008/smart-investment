@@ -1,0 +1,38 @@
+// overwrite inline styles injected by HBO component library
+.zb-champion-standard-theme .zb-card {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.zb-card {
+    .cd-card-header-title-disabled {
+        opacity: 0.6;
+    }
+    .cd-card-header-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #cdd0d1;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 8px;
+        width: rem-calc(35px);
+        height: rem-calc(35px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--zb-body-grey);
+
+        svg {
+            height: rem-calc(16px);
+            width: rem-calc(16px);
+            fill: var(--zb-body-grey);
+            stroke: var(--zb-body-grey);
+        }
+    }
+
+    .cd-card-header-rounded {
+        border-radius: rem-calc(16px);
+        padding-bottom: rem-calc(8px);
+    }
+}

@@ -1,0 +1,142 @@
+@import "helpers/rem-calc";
+@import "helpers/reset";
+@import "helpers/unreset";
+@import "partials/main";
+@import "partials/milestones";
+@import "partials/dip-details";
+@import "partials/joint-registration";
+@import "partials/tasks";
+@import "partials/status-chip";
+@import "partials/joint-details-modal";
+@import "partials/roadblocks";
+@import "partials/cards";
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    align-items: stretch;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.zb-content-wrapper {
+    position: relative;
+}
+
+.zb-card.main-body {
+    min-width: 100%;
+}
+
+button.zb-tertiary-cta {
+    font-size: 1rem;
+    color: var(--zb-champion-purple);
+    text-decoration: underline;
+    border: none;
+    background: none;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button.zb-tertiary-cta span {
+    margin-right: 0.25rem;
+}
+
+/*[MOBILE]: [0, 599],
+[TABLET]: [600, 839],
+[DESKTOP]: [840, 1279],
+[WIDESCREEN]: [1280, 0]*/
+
+.zb-masthead-container {
+    z-index: 10;
+}
+
+.zb-control-wrap .zb-date-picker-trigger,
+.zb-control-wrap .zb-input,
+.zb-control-wrap .zb-textarea {
+    width: 100%;
+}
+
+.zb-columns .zb-column {
+    flex: 1 1 auto;
+    margin: 0 12px;
+}
+
+.zb-columns {
+    display: flex;
+}
+
+.zb-columns-multiline {
+    row-gap: 1.5rem;
+}
+
+.zb-columns-vcentered {
+    align-items: center;
+}
+
+.zb-columns.zb-is-mobile {
+    display: flex;
+}
+
+.zb-masthead .zb-nav.zb-nav-visible {
+    display: block;
+}
+
+.zb-masthead-nav-item {
+    cursor: pointer;
+}
+
+.App-masthead .zb-masthead-nav-item .zb-icon {
+    color: inherit;
+}
+.App-masthead .zb-masthead-nav-item:hover .zb-icon {
+    color: inherit;
+}
+
+.zb-masthead.App-masthead .zb-masthead-nav-item {
+    display: inline-flex;
+}
+
+.App-main {
+    margin: 2em auto;
+    max-width: 1280px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.zb-flex.zb-flex-row-vcentered {
+    align-items: center;
+}
+
+.zb-masthead {
+    .zb-masthead-nav-item {
+        background-color: transparent;
+        border: none;
+        font-family: RNHouseSans, Arial, sans-serif;
+    }
+}
+
+.zb-heading2 {
+    margin: 0.85rem 0;
+}
+
+.cd-sign-out {
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 599px) {
+    .zb-champion-standard-theme {
+        .zb-notification-large {
+            justify-content: center;
+            .zb-notification-inner {
+                width: auto;
+            }
+            .zb-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    }
+}
