@@ -90,6 +90,7 @@
 .zb-champion-standard-theme .zb-card {
     margin-top: 0;
     margin-bottom: 0;
+    order: 1px solid #dedee2;
 }
 
 .zb-card .zb-card-header {
@@ -162,7 +163,8 @@
 }
 
 .zb-card {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
+    border: 1px solid #dedee2;
+    padding-top: 1rem;
     display: block;
     margin: 1.5rem 0;
     .cd-card-header-title-disabled {
@@ -204,8 +206,3 @@
   }
 }
 
-@media (min-width: 1280px) {
-  .zb-column-is-widescreen-6 {
-      width: 50%;
-  }
-}
